@@ -3,23 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public InputAction MoveAction;
     Rigidbody2D rigidbody2d;
     Vector2 move;
-
-    public int maxHealth = 5;
-    int currentHealth;
-
     public float maxSpeed = 3.0f;
     float currentSpeed;
+
+    public float timeInvulnerable = 3.0f;
+    bool isInvulnerable;
+    float damageCooldown;
+
+    public int maxHealth = 100;
+    public int health
+    {
+        get
+        {
+            return currentHealth;
+        }
+    }
+    public int currentHealth;
 
     // Start is called before the first frame update
     void Start()
     {
         MoveAction.Enable();
         rigidbody2d = GetComponent<Rigidbody2D>();
+
         currentHealth = maxHealth;
         currentSpeed = maxSpeed;
     }
@@ -34,7 +45,16 @@ public class NewBehaviourScript : MonoBehaviour
         transform.position = position;
         */
         move = MoveAction.ReadValue<Vector2>();
-        Debug.Log(move);
+        //Debug.Log(move);
+
+        if (isInvulnerable)
+        {
+            damageCooldown -= Time.deltaTime;
+            if (damageCooldown < 0)
+            {
+                isInvulnerable = false;
+            }
+        }
     }
 
     void FixedUpdate()
@@ -43,10 +63,23 @@ public class NewBehaviourScript : MonoBehaviour
         rigidbody2d.MovePosition(position);
     }
 
-    void changeHealth (int amount)
+    public void ChangeHealth (int amount)
     {
+        if (amount < 0)
+        {
+            if (isInvulnerable)
+            {
+                return;
+            }
+            isInvulnerable = true;
+            damageCooldown = timeInvulnerable;
+        }
+
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
+        UIHandler.instance.SetHealthValue(currentHealth / (float)maxHealth);
+
+        //Debug.Log(currentHealth + "/" + maxHealth);
+        
     }
 
 }
