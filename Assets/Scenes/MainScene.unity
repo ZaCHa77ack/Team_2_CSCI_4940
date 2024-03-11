@@ -554,8 +554,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff216cf270ee154aa0169dca8cba862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  vertical: 1
+  speed: 3.5
+  vertical: 0
   changeTime: 1
 --- !u!1 &972903207
 GameObject:
@@ -5605,6 +5605,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6475489687045118780, guid: 706dcc90c14dfc44e897e759c7191516, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b77822e0485373d40b5beb92e9a5e728, type: 2}
     - target: {fileID: 649132205601193282, guid: 706dcc90c14dfc44e897e759c7191516, type: 3}
       propertyPath: m_SortingOrder
       value: 1

@@ -1,0 +1,1612 @@
+fileFormatVersion: 2
+guid: 140f6d3c1285e3846a2e616e11f21ecd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 233
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb5dbce5dec029419c2fc77363ae3ca
+      internalID: 340327419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 233
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3124500e31442f4e8e8db03ef9f60e2
+      internalID: 1043247956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 234
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafb6b4ec42a12044b195400b75208a8
+      internalID: -1985732500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 233
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c9ca985ef7a774a9ac291777e28bc3
+      internalID: -217744443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 233
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561b3f93a1d4874409ae565fc22517d9
+      internalID: 1035418895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_5
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 233
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6235ac6ba0036404f84343d63d6f2af6
+      internalID: -720368372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_6
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 234
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b435a70197428d4a9b7b05d537aa634
+      internalID: 419340816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_7
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 233
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7908715fa1a56964bba3684d0b08d5df
+      internalID: 404617534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 200
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb9df6283db5c045b1f3c37d1b35bf9
+      internalID: 1213688012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 200
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba988d15c99b6a478ad6829866bc992
+      internalID: 699703279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 201
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69de0b597611ab4498dd06260b65a54
+      internalID: -1158209404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_11
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 200
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446ecf0d07db3ee4bbffc6f4c0f1da55
+      internalID: -1813129265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_12
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 200
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefbeafadbe69ae44b520c0e385d9a64
+      internalID: 1215205385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_13
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 200
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fde672416374d4e8791660cc657d50
+      internalID: -1754747457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_14
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 200
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00641ac1668b7b847a7595f6fa5e2392
+      internalID: -396753190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_15
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 200
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3edf52112032349b2692c552ce90c3
+      internalID: 2085534097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 167
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099c290104f9a0f46b769c4cd1dc048e
+      internalID: 1748177715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_17
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 167
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3a62abec2b7984b8981f9086d336f3
+      internalID: -630968072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 167
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be37ae899f720d44dbe95e5b27faf9ec
+      internalID: -172810443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_19
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 167
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f70cfc91a9bde49b0838e1a1571952
+      internalID: -176875245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_20
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 167
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06a40ff2733df945aa88fd50cf189fb
+      internalID: -775261044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_21
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 167
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377eb8c59b772264c81e85248e9afcf7
+      internalID: 409764154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_22
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 167
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561093c3d435cc14699b2f9e19112bb0
+      internalID: 1560052723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_23
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 167
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c47ccea9fa1ffe479aed7448f1305fb
+      internalID: 190385591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 134
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32629c1be8704b848a89ce8f198e9057
+      internalID: 762720872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 134
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ea13c972cf0814b8691662235ddb25
+      internalID: 105477827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_26
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 134
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5ef9b45a4efbb4d89ef8a3151cb9bb
+      internalID: -9218339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_27
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 134
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce1f40cafc603b4e91fff4803f5c790
+      internalID: 1077667595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_28
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 134
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8678860026dc6408ebfe49583337c3
+      internalID: 1135632887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_29
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 134
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf6ab1a77f009b4c9260e193d433cab
+      internalID: -1250011506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_30
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 134
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6ecd78078a88b4a8c553aef066a4a9
+      internalID: 667089931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_31
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 134
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1906bdc086c46a4d99395cf6e7b5322
+      internalID: 393309316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 101
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaf3f557ac040e46b5111f2831ba34f
+      internalID: -1546512893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_33
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 101
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7940ffdbd71564a4d8193c1686845c3c
+      internalID: -1750612897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_34
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 101
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3946a0b13d0b6914b95063e3f9da3d8e
+      internalID: -628766692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_35
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 101
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019551379cdcd8e4ba4836e7daecdb5a
+      internalID: -171378117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_36
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 101
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ed17ce357b30848ad35187944e550f
+      internalID: 258222750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_37
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 101
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0365e5536af6a55459f3050914cc2798
+      internalID: 1515730190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_38
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 101
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ae320be9d8bc047bc331f9fbbab323
+      internalID: -909526699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_39
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 101
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4978225a225c23b4c8dda9f5c1296acd
+      internalID: -96705690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 72
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b505c719a8716f46aafa7244f5398f0
+      internalID: 94362411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_41
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 71
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb55dc0fb4f85574ca4f4038cef7777b
+      internalID: -1163202675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_42
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 68
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c825ca61847f24f4ab5a1e8494b6dc11
+      internalID: 1648040879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_43
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 68
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4433197debe36409ccd1a9f6b7c1d5
+      internalID: -1671781732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_44
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 68
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5383c6230e6415a4881d40bb46baa695
+      internalID: -1346113675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_45
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 68
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79ec17fb0203e348b4cd82acd4cf62f
+      internalID: 677969974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_46
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 67
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a31397b370adbe46ad79144380c4307
+      internalID: 24851563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_47
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 67
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36669f55608f85d40b79593a95e5154c
+      internalID: 283279168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_48
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 34
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ceef8662ece6e4abae4133123b550a
+      internalID: -913277745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_49
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 34
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd9627af177d3b4c99b9c99d2b8ae6f
+      internalID: -858091652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_50
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 34
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54a0b514d2642b41bbc3d437d2ed885
+      internalID: 1309717860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_51
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 34
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c186616ba6537be48bec24b810e46076
+      internalID: 1496304767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_52
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 34
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b381755bbccac6f41a0f9bc112ca29db
+      internalID: -1298699168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_53
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 34
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df3e2143ba741d4f8450674b2eaa9c8
+      internalID: -403658194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_54
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 34
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e15ea2a56085b458bbe6b183c426e3
+      internalID: -541550057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_55
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 34
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63c89f38b8ba81469b0c9913b611536
+      internalID: 1512964723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_56
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d808283fda83e240ace8b33ea497b1b
+      internalID: 1155257191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_57
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01df5c35812a808439307de43b7e763b
+      internalID: 2124566604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_58
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d40b25629781ac48bdb8a35dc7f47e3
+      internalID: -1389013459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_59
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ea6e8a023ed3640845255ee6660025
+      internalID: 297316624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_60
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba136c1b406578448963930dee6a5a73
+      internalID: -2116169819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_61
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5fd140a3d167741af6f071f9f6dac9
+      internalID: 867544285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_62
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46ea46f0d7daff43b0e9e1bb9284ee2
+      internalID: 1008624760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside
+        Story-Style_63
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e74044b3e645b9469eb49dca2b0e382
+      internalID: 1691306831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_0: 340327419
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_1: 1043247956
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_10: -1158209404
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_11: -1813129265
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_12: 1215205385
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_13: -1754747457
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_14: -396753190
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_15: 2085534097
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_16: 1748177715
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_17: -630968072
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_18: -172810443
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_19: -176875245
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_2: -1985732500
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_20: -775261044
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_21: 409764154
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_22: 1560052723
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_23: 190385591
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_24: 762720872
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_25: 105477827
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_26: -9218339
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_27: 1077667595
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_28: 1135632887
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_29: -1250011506
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_3: -217744443
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_30: 667089931
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_31: 393309316
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_32: -1546512893
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_33: -1750612897
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_34: -628766692
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_35: -171378117
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_36: 258222750
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_37: 1515730190
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_38: -909526699
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_39: -96705690
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_4: 1035418895
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_40: 94362411
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_41: -1163202675
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_42: 1648040879
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_43: -1671781732
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_44: -1346113675
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_45: 677969974
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_46: 24851563
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_47: 283279168
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_48: -913277745
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_49: -858091652
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_5: -720368372
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_50: 1309717860
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_51: 1496304767
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_52: -1298699168
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_53: -403658194
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_54: -541550057
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_55: 1512964723
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_56: 1155257191
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_57: 2124566604
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_58: -1389013459
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_59: 297316624
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_6: 419340816
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_60: -2116169819
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_61: 867544285
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_62: 1008624760
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_63: 1691306831
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_7: 404617534
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_8: 1213688012
+      Custom Edited - Mario Customs - Bob-omb Mario & Luigi Bowsers Inside Story-Style_9: 699703279
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
