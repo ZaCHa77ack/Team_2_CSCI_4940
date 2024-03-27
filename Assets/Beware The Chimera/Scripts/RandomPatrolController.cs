@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RandomPatrolController : MonoBehaviour
 {
+    public FloatingHealthBar healthBar;
+
     private Animator anim;
     private Transform target;
 
@@ -19,9 +21,32 @@ public class RandomPatrolController : MonoBehaviour
     [SerializeField]
     private float minRange;
 
+    [SerializeField]
+    private float minIdleTime;
+
+    [SerializeField]
+    private float maxIdleTime;
+
+    private float idleTime;
+    private float idleTimer = 0f;
+
     private Vector3 nextPoint;
 
     Rigidbody2D rb;
+
+    [SerializeField]
+    private int maxHealth = 100;
+    private int currentHealth;
+
+    [SerializeField]
+    private Collider2D attackHitbox;
+
+    [SerializeField]
+    private Animator animator;
+
+    [SerializeField]
+    private float attackCooldown;
+    private float lastAttackTime;
 
     public void Start()
     {
@@ -30,6 +55,9 @@ public class RandomPatrolController : MonoBehaviour
         target = FindObjectOfType<PlayerController>().transform;
         GenerateNextPatrolPoint();
 
+        currentHealth = maxHealth;
+        healthBar = GetComponentInChildren<FloatingHealthBar>();
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void Update()
@@ -44,15 +72,35 @@ public class RandomPatrolController : MonoBehaviour
         {
             Patrol();
         }
+        else if (distanceToPlayer < minRange)
+        {
+            Attack();
+        }
     }
 
     void Patrol()
     {
         if (Vector3.Distance(transform.position, nextPoint) < 0.25f)
         {
-            GenerateNextPatrolPoint();
+            if (idleTimer <= 0f)
+            {
+                idleTimer = Random.Range(minIdleTime, maxIdleTime);
+                anim.SetBool("isRunning", false);
+            }
+
+            if (idleTimer > 0f)
+            {
+                idleTimer -= Time.deltaTime;
+                if (idleTimer <= 0f)
+                {
+                    GenerateNextPatrolPoint();
+                }
+            }
         }
-        MoveTowards(nextPoint);
+        else 
+        {
+            MoveTowards(nextPoint);
+        }
     }
 
     public void ChasePlayer()
@@ -65,10 +113,21 @@ public class RandomPatrolController : MonoBehaviour
 
     void MoveTowards(Vector3 targetPosition)
     {
-        anim.SetBool("isRunning", true);
-        anim.SetFloat("Move X", (targetPosition.x - transform.position.x));
-        anim.SetFloat("Move Y", (targetPosition.y - transform.position.y));
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        Vector3 direction = (targetPosition - transform.position).normalized;
+        Vector3 newPosition = transform.position + direction * speed * Time.deltaTime;
+
+        if (IsPathBlocked(direction))
+        {
+            GenerateNextPatrolPoint();
+        }
+        else
+        {
+            anim.SetBool("isRunning", true);
+            anim.SetFloat("Move X", direction.x);
+            anim.SetFloat("Move Y", direction.y);
+            //transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+            rb.MovePosition(newPosition);
+        }
     }
 
     void GenerateNextPatrolPoint()
@@ -89,7 +148,33 @@ public class RandomPatrolController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Wall"))
         {
-
+            GenerateNextPatrolPoint();
         }
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
+    }
+
+    void Attack()
+    {
+        if (Time.time - lastAttackTime >= attackCooldown)
+        {
+            lastAttackTime = Time.time;
+            animator.SetTrigger("Attack");
+        }
+    }
+
+    public void EnableAttackHitbox()
+    {
+        attackHitbox.enabled = true;
+    }
+
+    public void DisableAttackHitbox()
+    {
+        attackHitbox.enabled = false;
     }
 }

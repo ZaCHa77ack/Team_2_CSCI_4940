@@ -6,19 +6,29 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private Camera mainCamera;
-    public InputAction MoveAction;
-    private Rigidbody2D rigidbody2d;
-    private Vector2 move;
-    private Animator animator;
-    private Vector2 moveDirection = new Vector2(1, 0);
+    private Vector3 respawnPoint;
 
+    //Inputs
+    public InputAction MoveAction;
+
+    // Player Movement
+    private Vector2 moveDirection = new Vector2(1, 0);
+    private Vector2 move;
+    private Rigidbody2D rigidbody2d;
+
+    // Animator
+    private Animator animator;
+
+    // Player Speed
     public float maxSpeed;
     float currentSpeed;
 
+    // Invincibility Frames
     public float timeInvulnerable = 2.0f;
     bool isInvulnerable;
     float damageCooldown;
 
+    // Player Health
     public int maxHealth = 100;
     public int health
     {
@@ -28,8 +38,12 @@ public class PlayerController : MonoBehaviour
         }
     }
     public int currentHealth;
+    public FloatingHealthBar healthBar;
 
-    private bool isRunning;
+    // 
+    [SerializeField] private bool isRunning;
+    [SerializeField] private Collider2D collider;
+    [SerializeField] private bool isActive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +51,14 @@ public class PlayerController : MonoBehaviour
         mainCamera = Camera.main;
         MoveAction.Enable();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        collider = GetComponent<Collider2D>();
 
         currentHealth = maxHealth;
         currentSpeed = maxSpeed;
 
         animator = GetComponent<Animator>();
+        healthBar = GetComponentInChildren<FloatingHealthBar>();
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -72,6 +89,29 @@ public class PlayerController : MonoBehaviour
                 isInvulnerable = false;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(20);
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (isInvulnerable)
+        {
+            return;
+        }
+
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+        isInvulnerable = true;
+        damageCooldown = timeInvulnerable;
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     void FixedUpdate()
@@ -80,23 +120,33 @@ public class PlayerController : MonoBehaviour
         rigidbody2d.MovePosition(position);
     }
 
-    public void ChangeHealth (int amount)
+    public void Heal(int healAmount)
     {
-        if (amount < 0)
+        if (currentHealth < maxHealth)
         {
-            if (isInvulnerable)
-            {
-                return;
-            }
-            isInvulnerable = true;
-            damageCooldown = timeInvulnerable;
+            currentHealth += healAmount;
         }
-
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        UIHandler.instance.SetHealthValue(currentHealth / (float)maxHealth);
-
-        //Debug.Log(currentHealth + "/" + maxHealth);
-        
     }
 
+    public void Die()
+    {
+        isActive = false;
+        collider.enabled = false;
+        StartCoroutine(Respawn());
+    }
+
+    public void SetRespawnPoint(Vector3 position)
+    {
+        respawnPoint = position;
+    }
+
+    private IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(1f);
+        transform.position = respawnPoint;
+        isActive = true;
+        collider.enabled = true;
+        currentHealth = maxHealth;
+        healthBar.SetHealth(maxHealth);
+    }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public FloatingHealthBar healthBar;
+
     private Animator anim;
     private Transform target;
     public Transform homePosition;
@@ -25,6 +27,10 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private float currentWaitTime;
 
+    [SerializeField]
+    private int maxHealth = 100;
+    private int currentHealth;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -34,6 +40,11 @@ public class EnemyController : MonoBehaviour
             currentPatrolPoint = 0;
             currentWaitTime = waitTime;
         }
+
+        currentHealth = maxHealth;
+
+        healthBar = GetComponentInChildren<FloatingHealthBar>();
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     void Update()
@@ -54,6 +65,11 @@ public class EnemyController : MonoBehaviour
             {
                 GoHome();
             }
+        }
+        if (Vector3.Distance(transform.position, homePosition.position) < 0.1f)
+        {
+            anim.SetBool("isRunning", false);
+            anim.SetBool("isAttacking", false);
         }
     }
 
@@ -88,6 +104,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            anim.SetBool("isRunning", true);
             MoveTowards(patrolPoint.position);
         }
     }
@@ -98,6 +115,13 @@ public class EnemyController : MonoBehaviour
         anim.SetFloat("Move X", (homePosition.position.x - transform.position.x));
         anim.SetFloat("Move Y", (homePosition.position.y - transform.position.y));
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
     }
 
 }

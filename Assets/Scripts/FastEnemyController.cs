@@ -58,7 +58,7 @@ public class FastEnemyController : MonoBehaviour
 
         if (player != null)
         {
-            player.ChangeHealth(-20);
+            player.TakeDamage(20);
         }
     }
 }

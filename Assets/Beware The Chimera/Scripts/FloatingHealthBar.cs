@@ -8,14 +8,14 @@ public class FloatingHealthBar : MonoBehaviour
     [SerializeField]
     private Slider slider;
 
-    public void UpdateHealthBar(float currentValue, float maxValue)
+    public void SetMaxHealth(int health)
     {
-        slider.value = currentValue / maxValue;
+        slider.maxValue = health;
+        slider.value = health;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetHealth(int health)
     {
-        
+        slider.value = health;
     }
 }
