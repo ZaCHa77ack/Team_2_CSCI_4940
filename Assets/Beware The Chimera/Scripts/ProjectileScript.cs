@@ -12,6 +12,12 @@ public class ProjectileScript : MonoBehaviour
     public float lifetime = 5.0f;
     public float maxDistance = 100f;
 
+    [SerializeField]
+    private int damage;
+
+    private EnemyController enemyController;
+    private RandomPatrolController otherEnemy;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +42,20 @@ public class ProjectileScript : MonoBehaviour
     {
         if (Vector3.Distance(startPos, transform.position) >= maxDistance)
         {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Wall"))
+        {
+            enemyController = other.gameObject.GetComponent<EnemyController>();
+            if (enemyController != null && !enemyController.isInvulnerable)
+            {
+                enemyController.TakeDamage(damage);
+            }
+
             Destroy(gameObject);
         }
     }

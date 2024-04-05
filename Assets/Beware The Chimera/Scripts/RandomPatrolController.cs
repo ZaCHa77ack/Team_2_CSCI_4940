@@ -152,7 +152,7 @@ public class RandomPatrolController : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
 
@@ -165,6 +165,7 @@ public class RandomPatrolController : MonoBehaviour
         {
             lastAttackTime = Time.time;
             animator.SetTrigger("Attack");
+            animator.SetBool("isRunning", false);
         }
     }
 

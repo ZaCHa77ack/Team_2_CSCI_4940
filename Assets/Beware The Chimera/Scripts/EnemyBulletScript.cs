@@ -1,0 +1,53 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyBulletScript : MonoBehaviour
+{
+    private GameObject player;
+    private PlayerController playerController;
+    private Rigidbody2D rb;
+    public float force;
+    private float timer;
+
+    [SerializeField]
+    private int damage;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        Vector3 direction = player.transform.position - transform.position;
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+
+        float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, rot);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (timer > 5)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Wall"))
+        {
+            playerController = other.gameObject.GetComponent<PlayerController>();
+            if (playerController != null && !playerController.isInvulnerable)
+            {
+                playerController.TakeDamage(damage);
+            }
+
+            Destroy(gameObject);
+        }
+    }
+}

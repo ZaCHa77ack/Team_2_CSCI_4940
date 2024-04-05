@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     // Invincibility Frames
     public float timeInvulnerable = 2.0f;
-    bool isInvulnerable;
+    public bool isInvulnerable;
     float damageCooldown;
 
     // Player Health
@@ -40,9 +40,9 @@ public class PlayerController : MonoBehaviour
     public int currentHealth;
     public FloatingHealthBar healthBar;
 
-    // 
+    
     [SerializeField] private bool isRunning;
-    [SerializeField] private Collider2D collider;
+    [SerializeField] new private Collider2D collider;
     [SerializeField] private bool isActive = true;
 
     // Start is called before the first frame update
