@@ -58,7 +58,7 @@ public class EnemyController : MonoBehaviour
 
         if (distanceToPlayer <= maxRange && distanceToPlayer >= minRange)
         {
-            FollowPlayer();
+            ChasePlayer();
         }
         else if (distanceToPlayer > maxRange)
         {
@@ -87,7 +87,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void FollowPlayer()
+    public void ChasePlayer()
     {
         anim.SetBool("isRunning", true);
         anim.SetFloat("Move X", (target.position.x - transform.position.x));
