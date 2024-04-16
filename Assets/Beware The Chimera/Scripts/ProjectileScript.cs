@@ -16,7 +16,6 @@ public class ProjectileScript : MonoBehaviour
     private int damage;
 
     private EnemyController enemyController;
-    private RandomPatrolController otherEnemy;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +24,7 @@ public class ProjectileScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         startPos = transform.position;
-        
+
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 direction = mousePos - transform.position;
         direction.z = 0;
@@ -46,18 +45,18 @@ public class ProjectileScript : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Wall"))
         {
-            enemyController = other.gameObject.GetComponent<EnemyController>();
-            if (enemyController != null && !enemyController.isInvulnerable)
+            enemyController = collision.gameObject.GetComponent<EnemyController>();
+            if (enemyController != null)
             {
                 enemyController.TakeDamage(damage);
             }
 
             Destroy(gameObject);
+
         }
     }
-
 }

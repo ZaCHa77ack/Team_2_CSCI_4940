@@ -40,10 +40,10 @@ public class PlayerController : MonoBehaviour
     public int currentHealth;
     public FloatingHealthBar healthBar;
 
-    
+
     [SerializeField] private bool isRunning;
     [SerializeField] new private Collider2D collider;
-    [SerializeField] private bool isActive = true;
+    private bool isActive;
 
     // Start is called before the first frame update
     void Start()
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         move = MoveAction.ReadValue<Vector2>();
         if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
         {
@@ -89,10 +89,19 @@ public class PlayerController : MonoBehaviour
                 isInvulnerable = false;
             }
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+    void FixedUpdate()
+    {
+        Vector2 position = (Vector2)rigidbody2d.position + move * currentSpeed * Time.deltaTime;
+        rigidbody2d.MovePosition(position);
+    }
+
+    public void Heal(int healAmount)
+    {
+        if (currentHealth < maxHealth)
         {
-            TakeDamage(20);
+            currentHealth += healAmount;
         }
     }
 
@@ -111,20 +120,6 @@ public class PlayerController : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-        }
-    }
-
-    void FixedUpdate()
-    {
-        Vector2 position = (Vector2)rigidbody2d.position + move * currentSpeed * Time.deltaTime;
-        rigidbody2d.MovePosition(position);
-    }
-
-    public void Heal(int healAmount)
-    {
-        if (currentHealth < maxHealth)
-        {
-            currentHealth += healAmount;
         }
     }
 

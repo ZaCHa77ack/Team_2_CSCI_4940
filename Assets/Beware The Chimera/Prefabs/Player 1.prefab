@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 3560580910990673540}
   m_Layer: 6
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -421,9 +421,13 @@ MonoBehaviour:
     m_Flags: 0
   maxSpeed: 9
   timeInvulnerable: 3
+  isInvulnerable: 0
   maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 0}
+  isRunning: 0
+  collider: {fileID: 0}
+  isActive: 1
 --- !u!61 &6473896333178438465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -687,8 +691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 2149046265181976178, guid: 21afe78767b802545be8bbfc574f22da, type: 3}
   projectileTransform: {fileID: 5044926749943952475}
-  canFire: 0
-  timeBetweenFiring: 0.3
+  fireRate: 0
 --- !u!1 &4068583099794900726
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,9 +717,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4068583099794900726}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.050000004, y: 0.050000004, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8183794726199058876}

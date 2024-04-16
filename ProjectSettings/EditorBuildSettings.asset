@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: ab4c2e1e7d8d51a488d98bf11162ae91
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 91f9e820ab28ecf4a965366019a1f3b8
   m_configObjects:
     com.unity.ml-agents.settings: {fileID: 11400000, guid: c10d9f1fd715b504c8d630240f2cc0be, type: 2}

@@ -2,22 +2,22 @@
     "Agent Controller": {
         "checkpoints": [
             {
-                "steps": 26188,
-                "file_path": "results\\Test1\\Agent Controller\\Agent Controller-26188.onnx",
-                "reward": -1.0,
-                "creation_time": 1712609129.7269254,
+                "steps": 54608,
+                "file_path": "results\\Test1\\Agent Controller\\Agent Controller-54608.onnx",
+                "reward": -0.7857142857142857,
+                "creation_time": 1712631106.6339374,
                 "auxillary_file_paths": [
-                    "results\\Test1\\Agent Controller\\Agent Controller-26188.pt"
+                    "results\\Test1\\Agent Controller\\Agent Controller-54608.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 26188,
+            "steps": 54608,
             "file_path": "results\\Test1\\Agent Controller.onnx",
-            "reward": -1.0,
-            "creation_time": 1712609129.7269254,
+            "reward": -0.7857142857142857,
+            "creation_time": 1712631106.6339374,
             "auxillary_file_paths": [
-                "results\\Test1\\Agent Controller\\Agent Controller-26188.pt"
+                "results\\Test1\\Agent Controller\\Agent Controller-54608.pt"
             ]
         }
     },

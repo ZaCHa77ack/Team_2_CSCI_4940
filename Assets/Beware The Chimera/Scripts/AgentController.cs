@@ -80,7 +80,7 @@ public class AgentController : Agent
             backgroundSpriteRenderer.color = Color.green;
             EndEpisode();
         }
-        else if (collision.TryGetComponent(out Wall wall))
+        else if (collision.TryGetComponent(out Wall wall) || collision.TryGetComponent(out Obstacle obstacle))
         {
             AddReward(-1f);
             backgroundSpriteRenderer.color = Color.red;

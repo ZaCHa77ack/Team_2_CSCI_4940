@@ -42,7 +42,7 @@ public class EnemyBulletScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Wall"))
         {
             playerController = other.gameObject.GetComponent<PlayerController>();
-            if (playerController != null && !playerController.isInvulnerable)
+            if (playerController != null)
             {
                 playerController.TakeDamage(damage);
             }

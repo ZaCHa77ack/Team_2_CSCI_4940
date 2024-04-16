@@ -12,6 +12,8 @@ public class EnemyController : MonoBehaviour
     public List<Transform> patrolPoints;
     private int currentPatrolPoint = 0;
 
+    private PlayerController playerController;
+
     [SerializeField]
     private float speed;
 
@@ -29,7 +31,13 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField]
     private int maxHealth = 100;
+
+    [SerializeField]
     private int currentHealth;
+
+    [SerializeField] new private Collider2D collider;
+
+    [SerializeField] private Collider2D hitbox;
 
     // Invincibility Frames
     public float timeInvulnerable = 2.0f;
@@ -50,6 +58,10 @@ public class EnemyController : MonoBehaviour
 
         healthBar = GetComponentInChildren<FloatingHealthBar>();
         healthBar.SetMaxHealth(maxHealth);
+
+        collider = GetComponent<Collider2D>();
+
+        hitbox = GetComponent<Collider2D>();
     }
 
     void Update()
@@ -74,7 +86,7 @@ public class EnemyController : MonoBehaviour
         if (Vector3.Distance(transform.position, homePosition.position) < 0.1f)
         {
             anim.SetBool("isRunning", false);
-            
+
         }
 
         if (isInvulnerable)
@@ -138,7 +150,7 @@ public class EnemyController : MonoBehaviour
             MoveTowards(patrolPoint.position);
         }
     }
-    
+
     private void MoveTowards(Vector3 targetPosition)
     {
         anim.SetBool("isRunning", true);
@@ -167,8 +179,19 @@ public class EnemyController : MonoBehaviour
 
     void Die()
     {
+        collider.enabled = false;
         Destroy(gameObject);
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Wall"))
+        {
+            playerController = other.gameObject.GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                playerController.TakeDamage(50);
+            }
+        }
+    }
 }

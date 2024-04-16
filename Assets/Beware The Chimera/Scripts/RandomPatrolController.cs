@@ -48,6 +48,13 @@ public class RandomPatrolController : MonoBehaviour
     private float attackCooldown;
     private float lastAttackTime;
 
+    [SerializeField] new private Collider2D collider;
+
+    // Invincibility Frames
+    public float timeInvulnerable = 2.0f;
+    public bool isInvulnerable;
+    float damageCooldown;
+
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -58,6 +65,8 @@ public class RandomPatrolController : MonoBehaviour
         currentHealth = maxHealth;
         healthBar = GetComponentInChildren<FloatingHealthBar>();
         healthBar.SetMaxHealth(maxHealth);
+
+        collider = GetComponent<Collider2D>();
     }
 
     public void Update()
@@ -97,7 +106,7 @@ public class RandomPatrolController : MonoBehaviour
                 }
             }
         }
-        else 
+        else
         {
             MoveTowards(nextPoint);
         }
@@ -154,9 +163,20 @@ public class RandomPatrolController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
+        if (isInvulnerable)
+        {
+            return;
+        }
 
+        currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        isInvulnerable = true;
+        damageCooldown = timeInvulnerable;
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     void Attack()
@@ -177,5 +197,11 @@ public class RandomPatrolController : MonoBehaviour
     public void DisableAttackHitbox()
     {
         attackHitbox.enabled = false;
+    }
+
+    void Die()
+    {
+        collider.enabled = false;
+        Destroy(gameObject);
     }
 }
