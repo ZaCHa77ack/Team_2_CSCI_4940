@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
@@ -10,22 +9,28 @@ public class LevelLoader : MonoBehaviour
 
     public float enterSpeed = 1f;
 
-    public SceneAsset sceneToLoad;
+    public string sceneToLoad;
 
     public GameObject fadeAnimation;
 
-    public Canvas canvas;
+    public string canvasName = "Scene Anim";
 
     private Animator transitionAnimator;
+
+    public Canvas canvas;
 
     
     void Start()
     {
         Debug.Log("Level Transition Start");
 
-        canvas = FindObjectOfType<Canvas>();
+        canvas = GameObject.Find(canvasName)?.GetComponent<Canvas>();
+        if (canvas == null)
+        {
+            Debug.LogError($"Canvas named '{canvasName} not found. Please check the spelling and ensure it exists in the scene.");
+        }
 
-        if (sceneToLoad == null)
+        if (string.IsNullOrEmpty(sceneToLoad))
         {
             Debug.LogWarning(name + " has no sceneToLoad set");
         }
@@ -45,7 +50,7 @@ public class LevelLoader : MonoBehaviour
             {
                 Debug.Log("Transition animation is done");
 
-                SceneManager.LoadScene(sceneToLoad.name, LoadSceneMode.Single);
+                SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Single);
             }
         }
     }
@@ -65,10 +70,16 @@ public class LevelLoader : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Dynamic;
 
             Vector2 entranceDirection = (transform.position - rb.transform.position).normalized;
-
             rb.velocity = entranceDirection * enterSpeed;
 
-            transitionAnimator = Instantiate(fadeAnimation, canvas.transform).GetComponent<Animator>();
+            if (canvas != null)
+            {
+                transitionAnimator = Instantiate(fadeAnimation, canvas.transform).GetComponent<Animator>();
+            }
+            else
+            {
+                Debug.Log("No canvas found for the transition animation.");
+            }
         }
     }
 }
