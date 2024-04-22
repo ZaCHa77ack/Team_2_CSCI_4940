@@ -35,8 +35,6 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private int currentHealth;
 
-    [SerializeField] new private Collider2D collider;
-
     [SerializeField] private Collider2D hitbox;
 
     // Invincibility Frames
@@ -58,8 +56,6 @@ public class EnemyController : MonoBehaviour
 
         healthBar = GetComponentInChildren<FloatingHealthBar>();
         healthBar.SetMaxHealth(maxHealth);
-
-        collider = GetComponent<Collider2D>();
 
         hitbox = GetComponent<Collider2D>();
     }
@@ -171,7 +167,7 @@ public class EnemyController : MonoBehaviour
         isInvulnerable = true;
         damageCooldown = timeInvulnerable;
 
-        if (currentHealth <= 0)
+        if (currentHealth == 0 || currentHealth < 0)
         {
             Die();
         }
@@ -179,7 +175,6 @@ public class EnemyController : MonoBehaviour
 
     void Die()
     {
-        collider.enabled = false;
         Destroy(gameObject);
     }
 

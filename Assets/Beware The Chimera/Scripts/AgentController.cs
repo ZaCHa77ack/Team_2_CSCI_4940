@@ -69,20 +69,20 @@ public class AgentController : Agent
     public override void CollectObservations(VectorSensor sensor)
     {
         sensor.AddObservation((Vector2) transform.position);
-        //sensor.AddObservation((Vector2) target.position);
+        sensor.AddObservation((Vector2) target.position);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out Target target))
         {
-            AddReward(5f);
+            AddReward(50f);
             backgroundSpriteRenderer.color = Color.green;
             EndEpisode();
         }
         else if (collision.TryGetComponent(out Wall wall) || collision.TryGetComponent(out Obstacle obstacle))
         {
-            AddReward(-1f);
+            AddReward(-10f);
             backgroundSpriteRenderer.color = Color.red;
             EndEpisode();
         }

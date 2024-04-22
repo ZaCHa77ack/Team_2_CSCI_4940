@@ -3,7 +3,11 @@ guid: d44146982e0a6854b9b31602b4122278
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - tagTarget: {instanceID: 0}
+  - sceneToLoad: {instanceID: 0}
+  - fadeAnimation: {instanceID: 0}
+  - canvas: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

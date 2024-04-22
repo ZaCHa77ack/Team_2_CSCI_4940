@@ -1,23 +1,23 @@
 {
-    "Agent Controller": {
+    "MoveToTargetAgent": {
         "checkpoints": [
             {
-                "steps": 54608,
-                "file_path": "results\\Test1\\Agent Controller\\Agent Controller-54608.onnx",
-                "reward": -0.7857142857142857,
-                "creation_time": 1712631106.6339374,
+                "steps": 12204,
+                "file_path": "results\\Test1\\MoveToTargetAgent\\MoveToTargetAgent-12204.onnx",
+                "reward": -10.0,
+                "creation_time": 1713362273.1932833,
                 "auxillary_file_paths": [
-                    "results\\Test1\\Agent Controller\\Agent Controller-54608.pt"
+                    "results\\Test1\\MoveToTargetAgent\\MoveToTargetAgent-12204.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 54608,
-            "file_path": "results\\Test1\\Agent Controller.onnx",
-            "reward": -0.7857142857142857,
-            "creation_time": 1712631106.6339374,
+            "steps": 12204,
+            "file_path": "results\\Test1\\MoveToTargetAgent.onnx",
+            "reward": -10.0,
+            "creation_time": 1713362273.1932833,
             "auxillary_file_paths": [
-                "results\\Test1\\Agent Controller\\Agent Controller-54608.pt"
+                "results\\Test1\\MoveToTargetAgent\\MoveToTargetAgent-12204.pt"
             ]
         }
     },

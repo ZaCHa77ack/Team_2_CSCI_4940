@@ -42,8 +42,7 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField] private bool isRunning;
-    [SerializeField] new private Collider2D collider;
-    private bool isActive;
+
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +50,6 @@ public class PlayerController : MonoBehaviour
         mainCamera = Camera.main;
         MoveAction.Enable();
         rigidbody2d = GetComponent<Rigidbody2D>();
-        collider = GetComponent<Collider2D>();
 
         currentHealth = maxHealth;
         currentSpeed = maxSpeed;
@@ -125,8 +123,7 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-        isActive = false;
-        collider.enabled = false;
+        GetComponent<Collider>().enabled = false;
         StartCoroutine(Respawn());
     }
 
@@ -139,8 +136,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         transform.position = respawnPoint;
-        isActive = true;
-        collider.enabled = true;
+        GetComponent<Collider>().enabled = true;
         currentHealth = maxHealth;
         healthBar.SetHealth(maxHealth);
     }

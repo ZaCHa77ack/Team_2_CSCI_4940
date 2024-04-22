@@ -23,7 +23,7 @@ public class LevelLoader : MonoBehaviour
     {
         Debug.Log("Level Transition Start");
 
-        canvas = FindAnyObjectByType<Canvas>();
+        canvas = FindObjectOfType<Canvas>();
 
         if (sceneToLoad == null)
         {
@@ -62,7 +62,7 @@ public class LevelLoader : MonoBehaviour
             }
 
             Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
-            rb.bodyType = RigidbodyType2D.Kinematic;
+            rb.bodyType = RigidbodyType2D.Dynamic;
 
             Vector2 entranceDirection = (transform.position - rb.transform.position).normalized;
 

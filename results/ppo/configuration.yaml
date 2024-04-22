@@ -39,7 +39,7 @@ behaviors:
     keep_checkpoints: 5
     even_checkpoints: false
     max_steps: 500000
-    time_horizon: 64
+    time_horizon: 128
     summary_freq: 50000
     threaded: false
     self_play: null
@@ -48,8 +48,8 @@ env_settings:
   env_path: null
   env_args: null
   base_port: 5005
-  num_envs: 1
-  num_areas: 1
+  num_envs: 7
+  num_areas: 7
   timeout_wait: 60
   seed: -1
   max_lifetime_restarts: 10
@@ -62,7 +62,7 @@ engine_settings:
   time_scale: 20
   target_frame_rate: -1
   capture_frame_rate: 60
-  no_graphics: false
+  no_graphics: true
 environment_parameters: null
 checkpoint_settings:
   run_id: ppo
@@ -74,5 +74,5 @@ checkpoint_settings:
   inference: false
   results_dir: results
 torch_settings:
-  device: null
+  device: CUDA
 debug: false

@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 1329125887310880672}
   m_Layer: 6
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +330,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &5383000800670510364
 Rigidbody2D:
   serializedVersion: 4
@@ -426,8 +426,6 @@ MonoBehaviour:
   currentHealth: 100
   healthBar: {fileID: 0}
   isRunning: 0
-  collider: {fileID: 0}
-  isActive: 1
 --- !u!61 &6473896333178438465
 BoxCollider2D:
   m_ObjectHideFlags: 0

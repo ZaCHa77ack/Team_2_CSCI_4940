@@ -33,8 +33,9 @@ public class AgentControllerTest : Agent
     }
     public override void OnEpisodeBegin()
     {
-        transform.localPosition = new Vector3(Random.Range(0f, 0f), Random.Range(0f, 0f));
-        target.localPosition = new Vector3(Random.Range(0f, 0f), Random.Range(-10f, 0f));
+        transform.localPosition = new Vector3(Random.Range(-23f, -23f), Random.Range(11.5f, 11.5f));
+        //target.localPosition = new Vector3(Random.Range(19.5f, 19.5f), Random.Range(-2f, -2f));
+        target.localPosition = new Vector3(Random.Range(2f, 2f), Random.Range(10f, 10f));
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -42,7 +43,7 @@ public class AgentControllerTest : Agent
         float moveX = actions.ContinuousActions[0];
         float moveY = actions.ContinuousActions[1];
 
-        float moveSpeed = 7f;
+        float moveSpeed = 3f;
 
         moveDirection = new Vector2(moveX, moveY).normalized;
         transform.localPosition += new Vector3(moveX, moveY) * Time.deltaTime * moveSpeed;
@@ -66,13 +67,13 @@ public class AgentControllerTest : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation((Vector2)transform.position);
+        sensor.AddObservation((Vector2) transform.position);
         sensor.AddObservation((Vector2) target.position);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out Target target))
+        if (collision.TryGetComponent(out Player target) || collision.TryGetComponent(out PlayerController player))
         {
             AddReward(50f);
             //backgroundSpriteRenderer.color = Color.green;
