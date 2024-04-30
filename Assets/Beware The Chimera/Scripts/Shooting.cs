@@ -6,12 +6,15 @@ public class Shooting : MonoBehaviour
 {
     public GameObject projectile;
     public Transform projectileTransform;
+    private PlayerController player;
     public float fireRate;
     private float timer;
     private bool canFire;
 
     private void Update()
     {
+        player = GetComponent<PlayerController>();
+
         if (!canFire)
         {
             timer += Time.deltaTime;
@@ -26,6 +29,12 @@ public class Shooting : MonoBehaviour
         {
             canFire = false;
             Instantiate(projectile, projectileTransform.position, Quaternion.identity);
+        }
+
+        else if (player.currentHealth <= 0)
+        {
+            canFire = false;
+            
         }
     }
 }

@@ -16,6 +16,7 @@ public class ProjectileScript : MonoBehaviour
     private int damage;
 
     private EnemyController enemyController;
+    private AgentControllerTest agentController;
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +55,16 @@ public class ProjectileScript : MonoBehaviour
             {
                 enemyController.TakeDamage(damage);
             }
+            Destroy(gameObject);
+        }
 
+        if (collision.gameObject.CompareTag("Agent") || collision.CompareTag("Wall"))
+        {
+            agentController = collision.gameObject.GetComponent<AgentControllerTest>();
+            if (agentController != null)
+            {
+                agentController.TakeDamage(damage);
+            }
             Destroy(gameObject);
         }
     }

@@ -18,7 +18,6 @@ public class LevelLoader : MonoBehaviour
     private Animator transitionAnimator;
 
     public Canvas canvas;
-
     
     void Start()
     {

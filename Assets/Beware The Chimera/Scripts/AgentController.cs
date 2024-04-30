@@ -24,6 +24,16 @@ public class AgentController : Agent
 
     private Rigidbody2D rb;
 
+    [SerializeField]
+    private GameObject bulletPrefab;
+
+    [SerializeField]
+    private Transform bulletOrigin;
+
+    [SerializeField]
+    private float shootCooldown = 2.0f;
+    private float shootTimer = 0.0f;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -64,6 +74,16 @@ public class AgentController : Agent
         anim.SetFloat("Move X", lastMove.x);
         anim.SetFloat("Move Y", lastMove.y);
         anim.SetFloat("Speed", lastMove.magnitude);
+
+        if (shootTimer >= shootCooldown)
+        {
+            if (actions.DiscreteActions[2] == 1)
+            {
+                Shoot();
+                shootTimer = 0.0f;
+            }
+        }
+        shootTimer += Time.deltaTime;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -93,5 +113,10 @@ public class AgentController : Agent
         ActionSegment<float> continuousActions = actionsOut.ContinuousActions;
         continuousActions[0] = Input.GetAxisRaw("Horizontal");
         continuousActions[1] = Input.GetAxisRaw("Vertical");
+    }
+
+    private void Shoot()
+    {
+        Instantiate(bulletPrefab, bulletOrigin.position, bulletOrigin.rotation);
     }
 }

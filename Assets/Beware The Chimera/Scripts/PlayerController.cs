@@ -5,8 +5,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    private bool isDead;
+    public GameManagerScript gameManager;
+
     private Camera mainCamera;
-    private Vector3 respawnPoint;
 
     //Inputs
     public InputAction MoveAction;
@@ -42,7 +44,8 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField] private bool isRunning;
-
+    private Vector3 respawnPoint;
+    public float respawnDelay = 2.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -115,6 +118,13 @@ public class PlayerController : MonoBehaviour
         isInvulnerable = true;
         damageCooldown = timeInvulnerable;
 
+        if (currentHealth <= 0 && !isDead)
+        {
+            isDead = true;
+            gameManager.GameOver();
+            Debug.Log("Dead");
+        }
+
         if (currentHealth <= 0)
         {
             Die();
@@ -123,7 +133,6 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-        GetComponent<Collider>().enabled = false;
         StartCoroutine(Respawn());
     }
 
@@ -134,9 +143,8 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         transform.position = respawnPoint;
-        GetComponent<Collider>().enabled = true;
         currentHealth = maxHealth;
         healthBar.SetHealth(maxHealth);
     }
